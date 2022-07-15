@@ -1,0 +1,188 @@
+<div id="page_content">
+    <div id="page_content_inner">
+
+        <div class="md-card">
+            <div class="md-card-content">
+                <div class="Ins-head">
+
+                    <b class="uk-text-primary"> My Stocks</b>
+                </div>
+                <br><br>
+                <div class="Ins-head">
+
+                    <b class="uk-text-primary">Index Performance</b>
+                </div> <br>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-2">
+                        <div class="md-card">
+                            <div class="md-card-content">
+                                <h3>NIFTY 50 </h3>
+                                <h2>16500 <i class="material-icons md-48 uk-text-danger">
+                                        arrow_drop_down
+                                    </i> <i class="uk-text-danger uk-text-left-medium">-275(2.33%) </i></h2>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-2">
+                        <div class="md-card">
+                            <div class="md-card-content">
+                                <h3>SENSEX</h3>
+                                <h2>16500 <i class="material-icons md-48 uk-text-success">
+                                        arrow_drop_up
+                                    </i> <i class="uk-text-success uk-text-left-medium">+275(2.33%) </i>
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="Ins-head">
+
+                    <b class="uk-text-primary">Stocks Search</b>
+                </div>
+                <div style="margin-left: 50px;">
+                    <div class="uk-width-small-1-4">
+                        <label for="stock_list_search"> Search Here <span class="material-icons md-30">
+                                search
+                            </span> </label>
+                        <input class="md-input" type="text" id="stock_list_search" ng-model="q.name" md-input />
+                    </div>
+                </div> <br>
+
+                <div class="md-card">
+                    <div class="md-card uk-margin-medium-bottom">
+                        <div class="md-card-content">
+                            <div class="stock_list_search">
+                                <div class="uk-overflow-container">
+                                    <table class="uk-table uk-table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <h5>Company Name</h5>
+                                                </th>
+                                                <th>
+                                                    <h5>Stock Code</h5>
+                                                </th>
+                                                <th>
+                                                    <h5>Stock Price </h5>
+                                                </th>
+                                                <th>
+                                                    <h5>Previous Close Price
+                                                </th>
+                                                <th>
+                                                    <h5>Change</h5>
+                                                </th>
+                                                <th>
+                                                    <h5>Change %</h5>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> CITY UNION BANK</td>
+                                                <td>CUB</td>
+                                                <td>175</td>
+                                                <td>170</td>
+                                                <td>
+                                                    + 5
+                                                </td>
+                                                <td>+ 3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td> DEVIS LABORATORIES</td>
+                                                <td>DEVLAB</td>
+                                                <td>220.5</td>
+                                                <td>221.4 </td>
+                                                <td>+ 8.9</td>
+                                                <td>- 4.6%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HCL TECHNOLOGIES</td>
+                                                <td>HCLTECH</td>
+                                                <td>2555.0</td>
+                                                <td>2355.0</td>
+                                                <td>+ 200</td>
+                                                <td>+ 18%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HDFC BANK</td>
+                                                <td>HDFCBNK</td>
+                                                <td>5245.5</td>
+                                                <td>5445.2</td>
+                                                <td>- 200.3</td>
+                                                <td>- 19.4%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="uk-pagination">
+                                        <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span>
+                                        </li>
+                                        <li class="uk-active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><span>&hellip;</span></li>
+                                        <li><a href="#">20</a></li>
+                                        <li><a href="#"><i class="uk-icon-angle-double-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ins-head">
+
+                    <b class="uk-text-primary">Stock Snapshot</b>
+                </div>
+                <div style="margin-left: 50px;">
+                    <div class="uk-width-small-1-4">
+                        <label for="stock_list_search">Stock Name Search Here <span class="material-icons md-30">
+                                search
+                            </span> </label>
+                        <input class="md-input" type="text" id="stock_list_search" ng-model="q.name" md-input />
+                    </div>
+                    <br>
+
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <div class="md-card">
+                                <div class="md-card-content">
+                                    <h3>Current Market price: <strong style="margin-left:200px ;">7</strong></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <div class="md-card">
+                                <div class="md-card-content">
+                                    <h3>Face value:<strong style="margin-left:200px ;">2</strong></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <div class="md-card">
+                                <div class="md-card-content">
+                                    <h3>52 Week High:<strong style="margin-left:200px ;">120</strong></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <div class="md-card">
+                                <div class="md-card-content">
+                                    <h3>52 Week Low:<strong style="margin-left:200px ;">7</strong></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

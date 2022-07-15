@@ -1,0 +1,494 @@
+<!-- <style>
+    .purchase-btn {
+        margin-left: 5px;
+    }
+</style>
+
+<div id="page_content">
+    <div id="page_content_inner">
+
+        <div class="md-card-list-wrapper" id="mailbox">
+            <div class="uk-width-large-8-10 uk-container-center">
+
+
+
+                <div class="md-card">
+
+                    <div class="Ins-head">
+
+                        <b class="uk-text-primary">My Insurance</b>
+                    </div>
+                    <br>
+                    <div class="md-card">
+                        <div class="uk-grid uk-grid-medium" data-uk-grid-margin data-uk-grid-match="{target:'.md-card'}">
+
+                            <div class="uk-width-medium-1-4">
+                                <div class="md-card">
+                                    <div class="">
+                                        <div class="md-card-content">
+
+                                            <h3 class="">Overall Coverage</h3>
+                                            <h4 class="">10%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-4">
+                                <div class="md-card">
+                                    <div class="">
+                                        <div class="md-card-content">
+
+                                            <h3 class="">Health Policies</h3>
+                                            <h4 class="">RS 1,00,000</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-4">
+                                <div class="md-card">
+                                    <div class="">
+                                        <div class="md-card-content">
+
+                                            <h3 class="">Term Policies</h3>
+                                            <h5 class="">RS 2,00,000</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-4">
+                                <div class="md-card">
+                                    <div class="">
+                                        <div class="md-card-content">
+
+                                            <h3 class="">Life Policies</h3>
+                                            <h4 class="">RS 1,85,000</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="Ins-head">
+
+                        <b class="uk-text-primary"> Insurance Policies</b>
+                    </div>
+
+                    <div class="md-card">
+                        <div class="md-card uk-margin-medium-bottom">
+                            <div class="md-card-content">
+                                <div class="uk-overflow-container">
+                                    <table class="uk-table uk-table-hover">
+                                        <thead class="">
+                                            <tr>
+                                                <th>
+                                                    <h5 class="">Company Logo</h5>
+                                                </th>
+                                                <th>
+                                                    <h5 class="">Insurance Name</h5>
+                                                </th>
+                                                <th>
+                                                    <h5 class="">Type of Insurance </h5>
+                                                </th>
+                                                <th>
+                                                    <h5 class="">Plan
+                                                </th>
+                                                <th>
+                                                    <h5 class="">Maximum Coverage(in years)</h5>
+                                                </th>
+                                                <th>
+                                                    <h5 class="">Claim Settlement Ratio</h5>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <td><img src="assets/img/iciciins.png"></td>
+                                                <td>ICICI prudential</td>
+                                                <td>Term</td>
+                                                <td>ICICI Pru iProtect Smart</td>
+                                                <td>90</td>
+                                                <td>97%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="assets/img/insago1.png"></td>
+                                                <td>Ageon Life</td>
+                                                <td>Life</td>
+                                                <td>Aegon Life Saral Jeevan </td>
+                                                <td>95</td>
+                                                <td>99.25%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="assets/img/insniva11.png"></td>
+                                                <td>Niva Bupa</td>
+                                                <td>Term</td>
+                                                <td>Niva Bupa Health Companion</td>
+                                                <td>90</td>
+                                                <td>96%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="assets/img/insniva.png"></td>
+                                                <td>Aditya Birla capital</td>
+                                                <td>Life</td>
+                                                <td>Life Shield</td>
+                                                <td>95</td>
+                                                <td>97.4%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="userbutton"> <a class="md-btn md-btn-primary md-btn-wave-light" style="margin-left: 600px;" href="javascript:void(0)">Purchase</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Ins-head">
+
+                        <b class="uk-text-primary" style="font-size: 30px; margin-left: 20px;"> Purchase Insurance Policies</b>
+                    </div>
+                    <div class="md-card">
+                        <div class="md-card-content large-padding">
+                            <form id="form_validation" class="uk-form-stacked">
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-1">
+                                        <div class="parsley-row">
+                                            <label for="fullname">
+                                               <h4>Policy Name (Based On the row selected) </h4><span
+                                                   class="req"></span>
+                                           </label>
+                                            <input id="fullname" type="text" name="fullname" required class="md-input" md-input />
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="uk-width-medium-1-1">
+                                        <div class="parsley-row">
+                                            <label for="fullname">
+                                               <h4>Sum Assured </h4><span class="req"></span>
+                                           </label>
+                                            <input id="fullname" type="text" name="fullname" required class="md-input" md-input />
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="uk-width-medium-1-1">
+                                        <div class="parsley-row">
+                                            <label for="fullname">
+                                               <h4>Policy Term </h4><span class="req"></span>
+                                           </label>
+                                            <input id="fullname" type="text" name="fullname" required class="md-input" md-input />
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-medium-1-1">
+                                        <div class="parsley-row">
+                                            <label for="fullname">
+                                               <h4>Amount </h4><span class="req"></span>
+                                           </label>
+                                            <input id="fullname" type="text" name="fullname" required class="md-input" md-input />
+                                        </div>
+                                    </div>
+                                    <div class="purchase-btn">
+                                        <a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Confirm</a>
+                                        <a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Cancel</a>
+
+                                    </div>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+<!-- <div id="page_content">
+    <div id="page_content_inner">
+        <div class="user_heading" data-uk-sticky="{ top: 48, media: 960 }">
+            <div class="user_heading_avatar fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-new thumbnail">
+                    <img ng-src="assets/img/WALLET.png" alt="user avatar" />
+                </div>
+                <h1 style="float:right; color:#ffff;">&nbsp; My Insurance</h1>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div id="page_content">
+    <div id="page_content_inner">
+        <h3 style="color:rgb(54, 54, 167); font-size: 30px;">My Insurance</h3>
+        <br>
+        <br>
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-4">
+                <div class="md-card ">
+
+
+                    <div class="md-card-content">
+                        <h2 style=" text-align:center; "> No of policies</h2> <br>
+                        <h3 style=" text-align:center; font-size:30px;"> 3 </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-medium-1-4">
+                <div class="md-card ">
+                    <div class="md-card-content ">
+                        <h2 style=" text-align:center; ">Health policies </h2> <br>
+                        <h3 style=" text-align:center; font-size:30px;">₹7,50,000</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="uk-width-medium-1-4">
+                <div class="md-card ">
+                    <div class="md-card-content">
+                        <h2 style=" text-align:center; ">Term policies </h2> <br>
+                        <h3 style=" text-align:center; font-size:30px;">₹1,00,000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-medium-1-4">
+                <div class="md-card ">
+                    <div class="md-card-content">
+                        <h2 style=" text-align:center; ">Life policies</h2> <br>
+                        <h3 style=" text-align:center; font-size:30px;">₹10,00,000</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- </div>
+</div> -->
+
+
+        <!-- <div id="page_content">
+    <div id="page_content_inner"> -->
+        <h3 style="color:rgb(54, 54, 167); font-size: 30px;">My Policies</h3>
+        <br>
+        <br>
+        <div class="md-card uk-margin-medium-bottom">
+            <div class="md-card-content">
+                <div class="uk-overflow-container">
+                    <table class="uk-table uk-table-striped" style="text-align:center;">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center;"> #NO# </th>
+                                <th style="text-align:center;"> Policy No </th>
+                                <th style="text-align:center;"> Insurer </th>
+                                <th style="text-align:center;"> Policy Type </th>
+                                <th style="text-align:center;"> Sum Assured </th>
+                                <th style="text-align:center;"> Next Premium Due </th>
+                                <th style="text-align:center;"> Premium Amount (INR) </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> 0105078 </td>
+                                <td> ICICI Prudential </td>
+                                <td> Term </td>
+                                <td> 1,00,000 </td>
+                                <td> 31-Dec-2022 </td>
+                                <td> 10,000 </td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td> 0205156 </td>
+                                <td> Niva Bupa </td>
+                                <td> Health </td>
+                                <td> 7,50,000 </td>
+                                <td> 17-Oct-2022 </td>
+                                <td> 19,466 </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td> 0105124 </td>
+                                <td> Aditya Birla </td>
+                                <td> Life </td>
+                                <td> 10,00,000 </td>
+                                <td> 12-Sep-2022 </td>
+                                <td> 23,000 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <div class="uk-width-medium-1-5">
+                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light" style="margin-left:400px; align-items:center; padding: 10px;" ui-sref="restricted." href="javascript:void(0)"> Purchase Insurance </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- </div>
+</div> -->
+
+
+
+
+
+        <!-- <div id="page_content">
+    <div id="page_content_inner"> -->
+        <h3 style="color:rgb(54, 54, 167); font-size: 30px;">Insurance Policies</h3>
+        <br>
+        <br>
+        <div class="md-card uk-margin-medium-bottom">
+            <div class="md-card-content">
+                <div class="uk-overflow-container">
+                    <table class="uk-table uk-table-striped" style="text-align:center;">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center;"> Insurer Name </th>
+                                <th style="text-align:center;"> Type of Insurance </th>
+                                <th style="text-align:center;"> Plan </th>
+                                <th style="text-align:center;"> Max Coverage (in Years) </th>
+                                <th style="text-align:center;"> Claim Settlement Ratio 97.8 % </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> ICICI Prudential </td>
+                                <td> Term</td>
+                                <td> ICICI Pru iProtect Smart </td>
+                                <td> 90 </td>
+                                <td> 97.8 % </td>
+
+                            </tr>
+                            <tr>
+                                <td> Aegon Life </td>
+                                <td> Term </td>
+                                <td> Aegon Life Saral Jeevan </td>
+                                <td> 99 </td>
+                                <td> 99.25% </td>
+
+                            </tr>
+                            <tr>
+                                <td> Niva Bupa </td>
+                                <td> Health </td>
+                                <td> Niva Bupa Health Companion </td>
+                                <td> 95 </td>
+                                <td> 96% </td>
+
+                            </tr>
+                            <tr>
+                                <td> Aditya Birla Capital </td>
+                                <td> Term </td>
+                                <td> Life Shield </td>
+                                <td> 90 </td>
+                                <td> 97.54% </td>
+
+                            </tr>
+                            <tr>
+                                <td> Aditya Birla Capital </td>
+                                <td> Life </td>
+                                <td> Sun Life </td>
+                                <td> 90 </td>
+                                <td> 98.04% </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <div class="uk-width-medium-1-5">
+                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light" style="margin-left:400px; align-items:center; padding: 10px;" ui-sref="restricted." href="javascript:void(0)"> Purchase </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- </div>
+</div> -->
+
+        <!-- <div id="page_content">
+    <div id="page_content_inner"> -->
+        <h3 style="color:darkblue; font-size: 30px;">Purchase Insurance Policies</h3>
+        <br>
+        <br>
+        <!-- </div>
+</div> -->
+        <!-- <div id="page_content">
+    <div id="page_content_inner"> -->
+        <div class="md-card">
+            <div class="md-card-content large-padding">
+                <form id="form_validation" class="uk-form-stacked">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <div class="parsley-row">
+                                <label for="fullname"> Policy Name (Based on the row selected) <span class="req">*</span></label>
+                                <input id="fullname" type="text" name="fullname" required class="md-input" md-input />
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <div class="parsley-row">
+                                <label for="email"> Sum Assured <span class="req">*</span></label>
+                                <input id="email" type="email" name="email" data-parsley-trigger="change" required class="md-input" md-input />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <div class="parsley-row uk-margin-top">
+                                <label for="val_birth"> Policy Term <span class="req">*</span></label>
+                                <input type="text" name="val_birth" id="val_birth" required class="md-input" data-parsley-americandate data-parsley-americandate-message="This value should be a valid date (MM.DD.YYYY)" data-uk-datepicker="{format:'MM.DD.YYYY'}" md-input />
+                            </div>
+                        </div>
+
+                        <div class="uk-width-medium-1-2">
+                            <div class="parsley-row uk-margin-top">
+                                <div class="parsley-row">
+                                    <select id="select_demo_2" class="md-input" data-uk-tooltip="{pos:'top'}">
+                                        <option value="" disabled selected hidden Required> <b>*Amount* $$$</b> </option>
+                                        <option value="a" style="color:rgb(255, 0, 0);"><b>Error</b> </option>
+                                        <option value="b"> Debit Amount</option>
+                                        <option value="c"> Credit Amount</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <div class="md-input-wrapper">
+                                <ui-select ng-model="person.selected" theme="selectize" class="uk-width-1-1" title="Choose a person" uis-open-close="onOpenClose(isOpen)" altair-ui-select>
+                                    <ui-select-match placeholder="Select or search a person in the list...">
+                                        {{$select.selected.name}}</ui-select-match>
+                                    <ui-select-choices repeat="item in people | filter: $select.search">
+                                        <div ng-bind-html="item.name | highlight: $select.search"></div>
+                                        <small ng-bind-html="item.email | highlight: $select.search"></small>
+                                    </ui-select-choices>
+                                </ui-select>
+                                <input type="text" class="uk-hidden ui-select-validate md-input-processed" name="person_selected" ng-model="person.selected" md-input required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="userbutton">
+                            <a class="md-btn md-btn-primary md-btn-wave-light"ui-sref="restricted." href="javascript:void(0)">Conform</a>
+                            <a class="md-btn md-btn-primary md-btn-wave-light" ui-sref="restricted." href="javascript:void(0)">cancel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</div>

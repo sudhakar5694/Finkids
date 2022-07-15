@@ -1,0 +1,169 @@
+<style>
+    .layout {
+        background-color: #39f;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    p {
+        color: rgb(255, 255, 255);
+    }
+    
+    .page_content_inner {
+        float: center;
+        margin-right: 50px;
+    }
+    
+    .boxer {
+        margin: 20px;
+        padding: 20px 20px;
+    }
+</style>
+
+<!-- Header -->
+<div id="page_content">
+    <div id="page_content_inner">
+        <h3 class="heading_b uk-margin-bottom">My Subscription</h3>
+        <!-- Header -->
+
+        <!-- Cards -->
+        <div class="md-card">
+            <div class="layout">
+                <div class="md-card-content">
+                    <div class="uk-grid data-uk-grid-margin">
+                        <div class="uk-width-1-1">
+                            <h1>Your Current Subscription is valid till</h1>
+                            <p>DD-MM-YYYY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+
+        <!-- Rolling Paragraph -->
+        <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+            <div class="uk-width-large-1-2">
+                <h3 class="text">My Currenst Subscription Plan</h3>
+            </div>
+            <div class="uk-width-large-1-2">
+                <h3 class="area">My Invoice Details</h3>
+            </div>
+        </div>
+        <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+            <div class="uk-width-large-1-2">
+                <h3>Updrate to paid plan</h3>
+            </div>
+        </div>
+        <!-- Rolling Paragraph -->
+
+        <br>
+        <br>
+        <!-- Small Paragraph -->
+        <div>
+            <h1 style="color:rgb(74, 179, 249)">Become our Brand Ambassador</h1>
+        </div>
+        <!-- Small Paragraph -->
+
+        <!-- Cards -->
+        <div class="md-card">
+            <div class="layout">
+                <div class="md-card-content">
+                    <div class="uk-grid data-uk-grid-margin">
+                        <div class="uk-width-1-1">
+                            <h1>Delighted with our idea</h1>
+                            <p>Submit your testimonials and stand a chance to feature on our social media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+
+        <!-- Rolling Paragraph -->
+
+        <div id="page_content_inner">
+            <form action="" class="uk-form-stacked" id="product_edit_form">
+                <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                    <div class="uk-width-large-1-2">
+                        <h3 class="text">My Testimonial</h3>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-medium" data-uk-grid-margin>
+                    <div class="uk-width-xLarge-2-10 uk-width-large-3-10">
+                        <div class="md-card">
+                            <div class="md-card-toolbar">
+                                <div class="md-card-toolbar-actions">
+                                    <i class="md-icon material-icons">&#xE146;</i>
+                                </div>
+                                <h3 class="md-card-toolbar-heading-text">
+                                    Photos
+                                </h3>
+                            </div>
+
+                            <div class="md-card-content">
+                                <div class="uk-margin-bottom uk-text-center">
+                                    <button type="button" class="uk-modal-close uk-close uk-close-alt uk-position-absolute"></button>
+                                    <img src="assets/img/emoji.png" alt="error">
+                                </div>
+                                <ul class="uk-grid uk-grid-width-small-1-3 uk-text-center" data-uk-grid-margin>
+                                    <li class="uk-position-relative" ng-repeat="image in product.other_img">
+                                        <button type="button" class="uk-modal-close uk-close uk-close-alt uk-position-absolute"></button>
+                                        <img ng-src="{{image}}" alt="" class="img_small" />
+                                    </li>
+                                </ul>
+                                <div class="uk-width-large-1-3">
+                                    <img src="assets/img/emoji1.png" style="width: 42px;" alt="error">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-xLarge-8-10  uk-width-large-7-10">
+                        <div class="md-card">
+                            <div class="md-card-toolbar">
+                                <h3 class="md-card-toolbar-heading-text">
+                                    Details
+                                </h3>
+                            </div>
+                            <div class="md-card-content large-padding">
+                                <div class="uk-grid uk-grid-divider uk-grid-medium">
+                                    <div class="uk-width-large-1-2">
+                                        <div class="uk-form-row">
+                                            <label class="uk-form-label">Tags</label>
+                                            <selectize config="{ create: true }" options="product_tags" ng-model="product.tags" position="bottom" name="product_edit_tags_control"></selectize>
+                                        </div>
+                                        <div class="parsley-row">
+                                            <select id="select_demo_2" class="md-input" data-uk-tooltip="{pos:'top'}">
+                                                <option value="" disabled selected hidden>Rate the Product (3 – Best; 2-
+                                                    Very Good; 1 – Good)</option>
+                                                <option value="a">3 – Best</option>
+                                                <option value="b">2- Very Good</option>
+                                                <option value="c">1 – Good</option>
+                                            </select>
+                                        </div>
+                                        <br>
+                                        <div class="uk-form-row">
+                                            <label for="product_edit_description_control">Description</label>
+                                            <textarea class="md-input" name="product_edit_description_control" id="product_edit_description_control" cols="30" rows="4" ng-model="product.description" md-input textarea-autosize></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="uk-width-large-1-3">
+                            <div class="parsley-row">
+                                <a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Save</a>
+                                <a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

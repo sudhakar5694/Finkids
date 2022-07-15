@@ -1,0 +1,19 @@
+// parsley (validation)
+.parsley-errors-list {
+    color: @danger_color;
+    margin-top: 0;
+    span {
+        display: block;
+        padding-top: 4px;
+    }
+}
+.parsley-row {
+    &.md-input-danger {
+        .uk-input-group-addon {
+            &,
+            i {
+                color: @danger_color;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.js_collapsible_column {
+	&.in-transition {
+		transition: all 240ms ease;
+		> * {
+			display: none;
+		}
+	}
+	&.collapsed {
+		width: 65px;
+		.js_hidden {
+			display: none;
+		}
+	}
+}
